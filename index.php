@@ -1,14 +1,29 @@
 <?php
-
-class Perso 
-{
-    $Perso1 = new Perso ;
-    $Perso2 = new Perso ;
     
-    $Perso1->frapper($Perso2);
-    $Perso1->gagnerExperience();
-}
+    //creation de la classe "personnage"
     
+    class perso 
+
+    {
+        private $_helf = 100;
+        private $_level = 1;
+        private $_stamina = 100;
+        private $_XP = 50;
+        
+        
+        public function upXP()
+        {
+            $this->_XP = $this->_XP + 2; 
+            echo $this->_XP;
+        }
+        
+    }   
+    
+    $perso = new perso;
+    $perso->upXP();
+    
+        // on va chercher l'objet ($perso) et on invoque la méthode upXP() sur l'objet avec '->'
+        //$this représente l'objet que l'on utilise ($perso)  
 
 
 
@@ -23,7 +38,7 @@ class Perso
 
 
 
-//creation de la classe "personnage"
+
 
 //class perso
 //{
@@ -79,7 +94,6 @@ class Perso
                 
 //$perso->parler(); 
 
-// on va chercher l'objet $perso et on invoque la méthode parler() sur l'objet avec '->'
 
 ?>
 
