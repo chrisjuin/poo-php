@@ -1,43 +1,38 @@
 <?php
     
-    //creation de la classe "personnage"
+    //creation de la classe "Perso"
     
-    class perso 
+    class Voiture 
 
     {
-        private $_helf = 100;
-        private $_level = 1;
-        private $_stamina = 100;
-        private $_XP = 50;
+        private $_contenuReservoir = 0; 
+        private $_indicateurReservoirRouge = true;
         
-        
-        public function upXP()
-        {
-            $this->_XP = $this->_XP + 2; 
-            echo $this->_XP;
+        //Méthode
+
+        public function add contenuReservoir()
+            {
+            $this ->_contenuReservoir += $contenu; 
+            if ($this ->_contenuReservoir < 20) {          
+                $this ->_indicateurReservoirRouge = true; 
+            } else $this ->_indicateurReservoirRouge = false; 
+
+            }
+
+            
         }
-        
-    }   
+
+    $Voiture = new Voiture;
+    $Voiture->contenuReservoir();
     
-    $perso = new perso;
-    $perso->upXP();
+
+    // on va chercher l'objet ($Perso) et on invoque la méthode public function "dommages"() sur l'objet avec '->'
+    //$this représente l'objet que l'on utilise ($Perso)  
     
-        // on va chercher l'objet ($perso) et on invoque la méthode upXP() sur l'objet avec '->'
-        //$this représente l'objet que l'on utilise ($perso)  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
 
 
 //class perso
@@ -96,14 +91,3 @@
 
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
