@@ -1,15 +1,15 @@
 <?php    
     
-    class Voiture {
+        class Voiture {
         
         //proprietes = variables
         private $indicateurReserve;
         private $reservoir;
         
-        //Constructor
+        //Constructeur(1 constructeur par class)
     
         public function __construct($nbLitre){
-            $this->reservoir = $nbLitre;
+            $this->setreservoir = ($nbLitre);
             //faire l'affectation de $indicateurReserve
             //TRUE si $reservoir < 20, sinon FALSE
             $this->setReservoir($nbLitre);
@@ -42,8 +42,10 @@
         }
     }
 
-    $nbLitre = 25;
+    
+    //instensiation de la classe 
     $maVoiture = new Voiture($nbLitre);
-
-
-?>
+    // $maVoiture->getReservoir() 15;
+    // $maVoiture->setIndicateurReserve(16);
+    // $maVoiture->getReservoir() 16;
+    ?>
